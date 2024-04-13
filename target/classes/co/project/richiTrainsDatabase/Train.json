@@ -1,0 +1,53 @@
+[
+  {
+    "name": "fuego",
+    "referencia": "2",
+    "tipo": {
+      "marca": "Mercedez-benz",
+      "cantMxVagones": 28
+    },
+    "inRoad": false,
+    "kilometraje": 50.0,
+    "isEnabled": false,
+    "vagonesPasajeros": {
+      "size": 0
+    },
+    "vagonesEquipaje": {
+      "size": 0
+    }
+  },
+  {
+    "name": "rayo",
+    "referencia": "1",
+    "tipo": {
+      "marca": "Arnold",
+      "cantMxVagones": 28
+    },
+    "inRoad": false,
+    "kilometraje": 100.0,
+    "isEnabled": false,
+    "vagonesPasajeros": {
+      "size": 0
+    },
+    "vagonesEquipaje": {
+      "size": 0
+    }
+  },
+  {
+    "name": "agua",
+    "referencia": "3",
+    "tipo": {
+      "marca": "Mercedez-benz",
+      "cantMxVagones": 28
+    },
+    "inRoad": true,
+    "kilometraje": 100.0,
+    "isEnabled": true,
+    "vagonesPasajeros": {
+      "size": 0
+    },
+    "vagonesEquipaje": {
+      "size": 0
+    }
+  }
+]
