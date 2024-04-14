@@ -135,4 +135,30 @@ public class GestionEmployee {
 
     return trainList;
 }
+
+public boolean editEmployee(String employeeId, Employee employeeEditado){
+  EmployeeEntity[] employeeEntities = fileJson.getObjects(pathFile, EmployeeEntity[].class);
+  if (employeeEntities == null) {
+      return false; 
+  }
+
+  boolean employeeEncontrado = false;
+  for (EmployeeEntity entity : employeeEntities) {
+      if (entity.getId().equals(employeeId)) {
+          entity.setName(employeeEditado.getName());
+          entity.setLastname(employeeEditado.getLastName());
+          entity.setPhoneNumbers(employeeEditado.getPhoneNumbers());
+          entity.setId(employeeEditado.getId());
+          break;
+      }
+  }
+
+  if (!employeeEncontrado) {
+      System.out.println("No se encontró ningún tren con la referencia proporcionada.");
+      return false;
+  }
+
+  return fileJson.writeObjects(pathFile, employeeEntities);
+}
+
 }

@@ -14,7 +14,7 @@ public class GestionUser {
         this.fileJson = FileJsonAdapter.getInstance();
         this.pathFile = pathFile;
     }
-    
+    //pasarle el get de usuario en base a la contras
     public boolean addUser(User user){
         UserEntity[] userEntities = fileJson.getObjects(pathFile, UserEntity[].class);
         if(userEntities == null){
